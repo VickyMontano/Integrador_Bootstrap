@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!icono de codo a codo>
+    <link rel="icon" href="img/codoacodo.png" type="img/png">
+    <title>Proyecto_Integrador</title>
+    
+    <! incorporo bootstrap>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!incorporo css>
+    <link  rel="stylesheet" href="/css/estilo.css">
+  </head>
+  <body>
+    
+<div class="container-fluid"> 
+    
+    <!=================================================================================>
+    <!-----realizo el  MENU DEL ENCABEZADO-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #363638;">
+        <div class="container-fluid">
+             <a class="navbar-brand" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/">
+                <img src="img/codoacodo.png" alt="logo" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Conf Bs As</a>
+                     </li>
+                </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                         <li class="nav-item">
+                            <a class="nav-link" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Oradores
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="#orador">Steve Jobs</a></li>
+                                <li><a class="dropdown-item" href="#orador">Bill Gates</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#orador">Ada Lovelace</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y fecha</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link" href="#conviertete">Conviértete en orador</a>
+                        </li>
+                  
+                     </ul>
+                        <form class="d-flex">
+              
+                             <button class="btn btn-outline-success" type="submit">Comprar tickets</button>
+                        </form>
+               
+             </div>
+        </div>
+      </nav>
+
+    <! trabajo con el componente carrusel----------------------->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="/img/ba1.jpg" class="d-block brightness-30 w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                  <div class="container-fluid"  >
+                    <div class=" text-end" >
+                       <h5 class="fw-bolder" > Conf Bs As </h5>
+                        <p class="" > Buenos Aires llega por primera vez a Argentina. Un evento para compartircon nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet.Ven a conocer a miembros el evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!.
+  
+                        </p>
+                        <a href="#conviertete" class="btn btn-primary " style="background-color: transparent; border-color: aliceblue;">Quiero ser Orador</a>
+                        <a href="#" class="btn btn-outline-success" style="margin-left: 10px;">Comprar Tickets</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/ba2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                   <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+           <div class="carousel-item">
+              <img src="/img/ba3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+   
+<!---------------------------------------------------------------------------------------------------------->      
+<! armo la parte del medio de la pagina>
+<h5 style="text-align: center;"> CONOCE A LOS </h3>
+<h3 style="text-align:center ; " id="orador"> <b>ORADORES </b> </h1>
+<! comienzo con la estructura del componente de grilla y adentro card>
+<section class="container ">
+  <div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <img src="img/steve.jpg" class="img-fluid" alt="Responsive image">
+            <div class="card-body">
+                  <a href="#" class="btn btn-warning" >
+                    <b>
+                        JavaScript
+                    </b>
+                  </a>
+                  <a href="#" class="btn btn-primary" >
+                    <b>
+                      React
+                     </b>
+                  </a>
+                <h5 class="card-title ">
+                Steve Jobs
+                 </h5>
+                <p>
+                 Una de sus famosas frases y enseñanazas: "La innovación diferencia a un líder de un seguidor."
+                  La innovación es importantísima y en el campo de la tecnología aún más. 
+                </p>
+              </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <img src="img/bill.jpg" class="img-fluid" alt="Responsive image">
+              <div class="card-body">
+                  <a href="#" class="btn btn-warning">       
+                   <b>
+                    JavaScript
+                   </b>
+                  </a>
+                  <a href="#" class="btn btn-primary" >
+                    <b>
+                      React
+                    </b>
+                  </a>
+                  <h5 class="card-title ">
+                    Bill Gates
+                  </h5>
+                   <p>
+                   Una de sus famosas frases y enseñanazas: "El software es una gran combinación entre arte e ingeniería".
+                    A pesar de la rigidez que proyecta la programación, ésta necesita creatividad para poder ser bien ejecutada.
+                  </p>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <img src="img/ada.jpeg" class="img-fluid" alt="Responsive image">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-secondary "  >
+                <b>
+                  Negocios
+                </b>
+              </a>
+               <a href="#" class="btn btn-outline-danger"  >
+                <b>
+                 Startups
+                </b>
+             </a>
+             <h5 class="card-title ">
+             Ada Lovelace
+             </h5>
+             <p>
+               Una de sus famosas frases y enseñanazas:“Lo intelectual, lo moral y lo religioso parecen estar interrelacionados en un todo armonioso.” 
+               Recuerda para ser un buen profesional hay que ser buena persona.
+             </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+</section>
+
+
+</div>
+     
+
+<br>
+
+  
+
+<!realizo la parte de la pantalla dividida----------------------->
+<div class="containter ">
+  <div class="card-group">
+    <div class="card">
+      <img src="/img/honolulu.jpg" class="card-img-top h-100 " alt="...">
+        
+    </div>
+    <div class="card " style="background-color: rgb(59, 58, 58);">
+      
+      <div class="card-body h-25">
+        <h5 class="card-title text-white">Bs As-Octubre</h5>
+        <p class="card-text text-white small" >Buenos Aires es la provincia más grande del estado de Argentina, en los Estados Unidos,Honolulu es la más sureña de entre las principales ciudades estaunidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (Aproximadamente 600 km2 de superficie.) </p>
+        <a href="paginas/hawai.html" class="btn btn-primary" style="background-color: transparent; border-color: aliceblue;">
+          Conocé más
+        </a>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+<br>
+
+<! Ahora hago la parte del formulario---------------------------------------->
+<div class="mt-2">
+    <div class=" text-center">
+       <p  > 
+          Conviértete en un 
+       </p>
+       <h3 class=" fw-bold" >
+           ORADOR
+       </h3>
+       <p  >
+         Anótate como orador para dar una <u> charla ignite.</u> Cuéntanos de qué quieres hablar.
+       </p>
+
+    </div>
+</div>
+
+<section class="d-flex justify-content-center" id="conviertete">
+<form class="row g-3 " style=" width: 50%;">
+  <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Nombre">
+  </div>
+  <div class="col-md-6">
+      <input type="text" class="form-control" placeholder=" Apellido">
+  </div>
+  <div class="col-12">
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Sobre qué quieres hablar?</label>
+    </div>
+    
+  </div> 
+  <label>
+    Recuerda incluir un título para tu charla.
+  </label>
+  <div class="d-grid gap-2">
+    <button class="btn btnEnviar" type="submit">Enviar</button>
+    
+  </div>
+</form>
+
+</section>
+<br>
+
+  <!------------------------------------------------------------->
+  <! realizo el footer>
+  <footer class="p-3 pie-pagina " >
+    <div class="container-fluid " >
+      <div class="row row-cols-7">
+          <div class="col-xs col-lg">
+            <a class="nav-link active " style="color: white;" aria-current="page" href="https://agenciadeaprendizaje.bue.edu.ar/preguntas-frecuentes/">Preguntas <br>frecuentes</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="https://agenciadeaprendizaje.bue.edu.ar/contacto/">Contáctanos</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="https://www.buenosaires.gob.ar/noticias">Prensa</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="https://aulasvirtuales.bue.edu.ar/">Conferencias</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Términos y <br> condiciones</a>   
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="https://www.buenosaires.gob.ar/privacidad">Privacidad</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+          <div class="col-xs col-lg">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="https://aulasvirtuales.bue.edu.ar/">Estudiantes</a>
+          </div>
+          <div class='w-100 d-md-none'></div>
+      </div>
+
+    </div>
+  </footer>
+<!---------------->
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+      </script>   
+</body>
+</html>

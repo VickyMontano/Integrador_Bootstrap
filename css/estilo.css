@@ -1,0 +1,8 @@
+.pie-pagina{
+    background: rgb(2,0,36);
+background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(12,40,43,0.9603028711484594) 35%, rgba(5,54,61,1) 100%);
+}
+.btnEnviar{
+    background-color:#8cc751 ;
+    color: white;
+}
